@@ -6,8 +6,11 @@
 通过chrome拓展插件提供的webRequestBlocking API和cookie API实现强制携带cookie
 
 ## 使用指南
+Chrome Manifest v2 使用 cookie插件v0.2.1.zip
 
-下载 [插件](https://github.com/chirpmonster/chrome-cookie-extence/raw/master/cookie%E6%8F%92%E4%BB%B6v0.2.1.zip) ，点击Chrome浏览器右上角… =>更多工具=>拓展程序
+Chrome Manifest v3 使用 cookie插件v0.3.0.zip
+
+点击Chrome浏览器右上角… =>更多工具=>拓展程序
 
 打开开发者模式，拖入zip文件，立即生效
 
@@ -42,6 +45,8 @@ npm run build
 0.2.0 添加强制替换cookie的配置
 
 0.2.1 支持对ip地址型domain的支持
+
+0.3.0 Manifest V2扩展升级V3
 
 ---
 

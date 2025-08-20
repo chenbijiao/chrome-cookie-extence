@@ -1,8 +1,8 @@
 {
-  "manifest_version": 2,
-  "name": "Chrome Cookie携带问题",
-  "version": "0.2.1",
-  "description": "Chrome 90+的cookie携带问题",
+  "manifest_version": 3,
+  "name": "Chrome Cookie携带问题 Manifest V3",
+  "version": "0.3.0",
+  "description": "Chrome 90+的cookie携带问题 Manifest V3",
   "icons": {
     "16": "icons/icon64.png",
     "32": "icons/icon64.png",
@@ -10,12 +10,9 @@
     "128": "icons/icon64.png"
   },
   "background": {
-    "scripts": [
-      "background.js"
-    ],
-    "persistent": true
+    "service_worker": "background.js"
   },
-  "browser_action": {
+  "action": {
     "default_title": "解决Chrome浏览器Cookie携带问题",
     "default_popup": "popup.html"
   },
@@ -23,10 +20,11 @@
     "storage",
     "webRequest",
     "webRequestBlocking",
-    "*://*/",
-    "cookies"
+    "cookies",
+    "debugger",
+    "tabs"
   ],
-  "content_scripts": [
-
+  "host_permissions": [
+    "<all_urls>"
   ]
 }
